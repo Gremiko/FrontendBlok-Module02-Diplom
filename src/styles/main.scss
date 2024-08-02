@@ -76,6 +76,9 @@ body {
       border: 1px solid $light;
       margin-left: 10px;
       height: 2.4rem;
+      @media (max-width: $r_mobile_500) {
+        border: none;
+      }
     }
   }
 }
