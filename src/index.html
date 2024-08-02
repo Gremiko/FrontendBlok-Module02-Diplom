@@ -10,20 +10,22 @@
       <div class="container">
         <nav class="header__navigation">
           <ul class="header__menu">
-            <a href="#about" class="header__link"><li>Обо мне</li></a>
-            <a href="#portfolio" class="header__link"><li>Портфолио</li></a>
-            <a href="#quality" class="header__link"><li>Этапы работ</li></a>
-            <a href="#tarif" class="header__link"><li>Цены</li></a>
-            <a href="#contact" class="header__link"><li>Обратная связь</li></a>
+            <li><a href="#about" class="header__link">Обо мне</a></li>
+            <li><a href="#portfolio" class="header__link">Портфолио</a></li>
+            <li><a href="#quality" class="header__link">Этапы работ</a></li>
+            <li><a href="#tarif" class="header__link">Цены</a></li>
+            <li><a href="#contact" class="header__link">Обратная связь</a></li>
           </ul>
           <ul class="header__contact">
-            <a href="tel:89237777777" class="header__link"
-              ><li>8 923 777-77-77</li></a
-            >
-            <li class="desktop">|</li>
-            <a href="mailto:dudugrem@gmail.com" class="header__link desktop"
-              ><li>dudugrem@gmail.com</li></a
-            >
+            <li class="header__tel">
+              <a href="tel:89237777777" class="header__link">8 923 777-77-77</a>
+            </li>
+
+            <li>
+              <a href="mailto:dudugrem@gmail.com" class="header__link desktop"
+                >dudugrem@gmail.com</a
+              >
+            </li>
           </ul>
           <img
             src="./images/icon/burger.svg"
@@ -45,10 +47,12 @@
           </div>
           <div class="main__social">
             <ul>
-              <li><a href="#" target="_blank">Vk</a></li>
-              <li>|</li>
-              <li><a href="#" target="_blank">Youtube</a></li>
-              <li>|</li>
+              <li class="main__social-border">
+                <a href="#" target="_blank">Vk</a>
+              </li>
+              <li class="main__social-border">
+                <a href="#" target="_blank">Youtube</a>
+              </li>
               <li><a href="#" target="_blank">Linkedin</a></li>
             </ul>
           </div>
@@ -58,34 +62,34 @@
     </main>
     <section class="about container" id="about">
       <div class="about__info">
-        <div class="about__item">
-          <div class="about__title">FRONT-END</div>
-          <div class="about__text">
+        <ul class="about__item">
+          <li class="about__title">FRONT-END</li>
+          <li class="about__text">
             HTML+CSS+JS кодирование<br />
             дизайнов любой сложности
-          </div>
-        </div>
-        <div class="about__item">
-          <div class="about__title">BACK-END</div>
-          <div class="about__text">
+          </li>
+        </ul>
+        <ul class="about__item">
+          <li class="about__title">BACK-END</li>
+          <li class="about__text">
             Разработка сложной back-end<br />
             логики для готового front-end
-          </div>
-        </div>
-        <div class="about__item">
-          <div class="about__title">WORDPRESS</div>
-          <div class="about__text">
+          </li>
+        </ul>
+        <ul class="about__item">
+          <li class="about__title">WORDPRESS</li>
+          <li class="about__text">
             Разработка сайтов - от блога<br />
             до интернет магазина
-          </div>
-        </div>
-        <div class="about__item">
-          <div class="about__title">SEO ПРОДВИЖЕНИЕ</div>
-          <div class="about__text">
+          </li>
+        </ul>
+        <ul class="about__item">
+          <li class="about__title">SEO ПРОДВИЖЕНИЕ</li>
+          <li class="about__text">
             Качественное улучшение позиций<br />
             сайта в поисковой выдаче
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
 
       <div class="about__me">
@@ -478,11 +482,15 @@
         </div>
       </div>
       <div class="project__contact">
-        <div class="project__social">
-          <a href="#" target="_blank">VK</a> |
-          <a href="#" target="_blank">Youtube</a> |
-          <a href="#" target="_blank">Linkedin</a>
-        </div>
+        <ul class="project__social">
+          <li class="project__social-border">
+            <a href="#" target="_blank">VK</a>
+          </li>
+          <li class="project__social-border">
+            <a href="#" target="_blank">Youtube</a>
+          </li>
+          <li><a href="#" target="_blank">Linkedin</a></li>
+        </ul>
         <div class="project__form">
           <form action="">
             <label class="project__form-label">Телефон или почта</label>
@@ -517,13 +525,15 @@
           <a href="#contact" class="footer__link"><li>Обратная связь</li></a>
         </ul>
         <ul class="footer__contact">
-          <a href="tel:89237777777" class="footer__link"
-            ><li>8 923 777-77-77</li></a
-          >
-          <li>|</li>
-          <a href="mailto:dudugrem@gmail.com" class="footer__link"
-            ><li>dudugrem@gmail.com</li></a
-          >
+          <li class="footer__contact-border">
+            <a href="tel:89237777777" class="footer__link">8 923 777-77-77</a>
+          </li>
+
+          <li>
+            <a href="mailto:dudugrem@gmail.com" class="footer__link"
+              >dudugrem@gmail.com</a
+            >
+          </li>
         </ul>
       </nav>
       <div class="copy">
@@ -580,31 +590,30 @@
         />
         <ul>
           <li><hr /></li>
-          <a href="#about"><li>Обо мне</li></a>
+          <li><a href="#about">Обо мне</a></li>
           <li><hr /></li>
-          <a href="#portfolio"><li>Портфолио</li></a>
+          <li><a Портфолио href="#portfolio">Портфолио</a></li>
           <li><hr /></li>
-          <a href="#quality"><li>Этапы Работ</li></a>
+          <li><a Этапы href="#quality">Этапы Работ</a></li>
           <li><hr /></li>
-          <a href="#tarif"><li>Цены</li></a>
+          <li><a href="#tarif">Цены</a></li>
           <li><hr /></li>
-          <a href="#contact"><li>Обратная связь</li></a>
+          <li><a href="#contact">Обратная связь</a></li>
           <li><hr /></li>
         </ul>
         <div class="burger__contact">
           <ul>
-            <a href="tel:89237777777"> <li>8 923 777-77-77</li></a>
-            <li>|</li>
-            <a href="mailto:dudugrem@gmail.com"><li>dudugrem@gmail.com</li></a>
+            <li class="burger__contact-border">
+              <a href="tel:89237777777">8 923 777-77-77</a>
+            </li>
+            <li><a href="mailto:dudugrem@gmail.com">dudugrem@gmail.com</a></li>
           </ul>
         </div>
         <div class="burger__social">
           <ul>
-            <a href="#"><li>Vk</li></a>
-            <li>|</li>
-            <a href="#"><li>Instagram</li></a>
-            <li>|</li>
-            <a href="#"><li>Linkedin</li></a>
+            <li class="burger__social-border"><a href="#">Vk</a></li>
+            <li class="burger__social-border"><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedin</a></li>
           </ul>
         </div>
       </div>

@@ -1,4 +1,10 @@
 import "./styles/main.scss";
+//Изменение цвета хедер при прокрутке
+window.addEventListener("scroll", () => {
+  document
+    .querySelector(".header")
+    .classList.toggle("scrolled", window.scrollY > 2000);
+});
 
 //Обсудить проект кнопка вверху рядом с хедером
 document.addEventListener("DOMContentLoaded", () => {
